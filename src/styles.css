@@ -1,0 +1,117 @@
+.body {
+  display: block;
+  margin: 0 auto;
+}
+
+.project {
+  max-width: 520px;
+  margin: 20px auto;
+  padding: 30px 20px 30px 20px;
+  margin-top: 30px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px grey;
+  font-family: "Neucha", cursive;
+  background: linear-gradient(
+    359.3deg,
+    rgb(196, 214, 252) 1%,
+    rgba(187, 187, 187, 0) 70.9%
+  );
+  border-radius: 13px;
+}
+
+.btn btn-primary searchBtn {
+  padding: 0;
+}
+i .fa-solid .fa-location-dot {
+  font: 20px;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  margin-left: -30px;
+  padding-top: 10px;
+}
+
+li {
+  display: inline;
+  padding-right: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.rain {
+  max-width: 100%;
+  display: block;
+  padding: 20px auto;
+}
+
+.weather-image i {
+  font-size: 30px;
+}
+
+.weather-image {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: rgb(53, 72, 117);
+  text-align: center;
+  font-size: 10px;
+}
+
+.weather-temperature {
+  text-align: center;
+  font-size: 18px;
+}
+.day {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  opacity: 0.9;
+}
+
+.units {
+  font-size: 25px;
+  vertical-align: top;
+}
+
+.units a {
+  text-decoration: none;
+  color: rgb(43, 77, 157);
+  font-weight: bold;
+}
+
+.type-of-weather {
+  text-align: center;
+  font-size: 25px;
+  opacity: 0.9;
+}
+
+.clock {
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 0.8;
+}
+
+.current-city {
+  text-align: center;
+  font-weight: 500px;
+  font-size: 45px;
+  line-height: 1.5;
+}
+
+.whichCity {
+  box-shadow: 3px 3px 7px grey;
+}
+
+.next-five-days {
+  padding: 20px auto;
+}
