@@ -26,124 +26,124 @@
   </head>
   <body>
     <div class="container">
-      <div class="project">
-        
-        <form id="choose-city">
+      <div class="project" id="project">
+        <div class="card">
+          <div class="card-body">
+            <form id="choose-city">
+              <div class="row justify-content-start">
+                <div class="col-6">
+                  <input
+                    id="which-city"
+                    class="whichCity form-control"
+                    type="search"
+                    placeholder="Enter a city name..."
+                    autocomplete="off"
+                  />
+                </div>
 
-         <div class="row justify-content-start">
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    id="search-button"
+                    class="btn btn-primary searchBtn"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
 
-          <div class="col-6">
-            <input
-            id="which-city"
-            class="whichCity form-control"
-            type="search"
-            placeholder="Enter a city name..."
-            autocomplete="off"
-            />
-          </div>
+                <div class="col-1">
+                  <button
+                    type="button"
+                    id="locate-btn"
+                    class="btn btn-success changeBtn"
+                  >
+                    <i class="fa-solid fa-location-pin"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
 
-          <div class="col-1">
-            <button
-              type="submit"
-              id="search-button"
-              class="btn btn-primary searchBtn"
-            >
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </button> 
-          </div> 
-          
-          <div class="col-1">
-            <button
-              type="button"
-              id="locate-btn"
-              class="btn btn-success changeBtn"
-              >
-              <i class="fa-solid fa-location-pin"></i>
-            </button>
-            
-          </div>
+            <ul>
+              <li class="cities"><a href="">Kyiv</a></li>
+              <li class="cities"><a href="">Poltava</a></li>
+              <li class="cities"><a href="">Rome</a></li>
+              <li class="cities"><a href="">Milan</a></li>
+            </ul>
 
-         </div>
+            <div class="type-of-weather" id="weather">Rain</div>
 
-        </form>
-                    
+            <div class="clock" id="clock"></div>
 
-          <ul>
-            <li class="cities"><a href="">Kyiv</a></li>
-            <li class="cities"><a href="">Poltava</a></li>
-            <li class="cities"><a href="">Rome</a></li>
-            <li class="cities"><a href="">Milan</a></li>
-          </ul>
+            <div class="current-city">
+              <span class="city" id="city">Prague</span>
+              <span class="current-temperature" id="temperature">2°C</span>
 
-          <div class="type-of-weather" id="weather">Rain</div>
-
-          <div class="clock" id="clock"></div>
-
-          <div class="current-city">
-            <span class="city" id="city">Prague</span>
-            <span class="current-temperature" id="temperature">2°C</span>
-
-            <!--<span class="units">
+              <!--<span class="units">
           <a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
           </span>-->
-          </div>
+            </div>
 
-          <img src="images/rainy.jpg" alt="rain" class="rain" />
+            <img src="images/rainy.jpg" alt="rain" class="rain" />
 
-          <div class="next-five-days">
-            <div class="row align-items-center">
-              <div class="col-sm">
-                <div class="day">Mon</div>
-                <div class="weather-image">
-                  <i class="fa-solid fa-cloud"></i>
+            <div class="next-five-days">
+              <div class="row align-items-center">
+                <div class="col-sm">
+                  <div class="day">Mon</div>
+                  <div class="weather-image">
+                    <i class="fa-solid fa-cloud"></i>
+                  </div>
+                  <div class="weather-temperature">
+                    16<span class="celsius-T">°C</span>
+                  </div>
                 </div>
-                <div class="weather-temperature">
-                  16<span class="celsius-T">°C</span>
-                </div>
-              </div>
 
-              <div class="col-sm">
-                <div class="day">Tue</div>
-                <div class="weather-image">
-                  <i class="fa-solid fa-cloud-sun"></i>
+                <div class="col-sm">
+                  <div class="day">Tue</div>
+                  <div class="weather-image">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                  <div class="weather-temperature">
+                    20<span class="celsius-T">°C</span>
+                  </div>
                 </div>
-                <div class="weather-temperature">
-                  20<span class="celsius-T">°C</span>
-                </div>
-              </div>
 
-              <div class="col-sm">
-                <div class="day">Wed</div>
-                <div class="weather-image">
-                  <i class="fa-solid fa-cloud-sun"></i>
+                <div class="col-sm">
+                  <div class="day">Wed</div>
+                  <div class="weather-image">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                  <div class="weather-temperature">
+                    18<span class="celsius-T">°C</span>
+                  </div>
                 </div>
-                <div class="weather-temperature">
-                  18<span class="celsius-T">°C</span>
-                </div>
-              </div>
 
-              <div class="col-sm">
-                <div class="day">Thu</div>
-                <div class="weather-image">
-                  <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <div class="col-sm">
+                  <div class="day">Thu</div>
+                  <div class="weather-image">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                  </div>
+                  <div class="weather-temperature">
+                    20<span class="celsius-T">°C</span>
+                  </div>
                 </div>
-                <div class="weather-temperature">
-                  20<span class="celsius-T">°C</span>
-                </div>
-              </div>
 
-              <div class="col-sm">
-                <div class="day">Fri</div>
-                <div class="weather-image">
-                  <i class="fa-solid fa-cloud-bolt"></i>
-                </div>
-                <div class="weather-temperature">
-                  25<span class="celsius-T">°C</span>
+                <div class="col-sm">
+                  <div class="day">Fri</div>
+                  <div class="weather-image">
+                    <i class="fa-solid fa-cloud-bolt"></i>
+                  </div>
+                  <div class="weather-temperature">
+                    25<span class="celsius-T">°C</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="footing">
+          <a href="https://github.com/Atrthouse/my-project">Open source code</a>
+          by Baranovska Julia
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.project {
+.card {
   max-width: 520px;
   margin: 20px auto;
   padding: 30px 20px 30px 20px;
@@ -114,4 +114,11 @@ li:hover {
 
 .next-five-days {
   padding: 20px auto;
+}
+
+#project .footing {
+  text-align: center;
+}
+#project .footing a {
+  text-decoration: none;
 }
